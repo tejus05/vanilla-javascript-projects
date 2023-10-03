@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto',arial,sans-serif;
+}
+body, html {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, #eeaeca 0%, rgba(148, 187, 233, 1) 100%);
+  color: white;
+  font-family: arial;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.heading{
+  font-size: 40px;
+  text-align: center;
+}
+
+.symbol {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.symbol-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.results {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.js-score{
+  font-size: 25px;
+}
+.results img {
+  border: none;
+  height: 90px;
+  width: 90px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.button-style {
+  /* display: block;  */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+.play-container, .js-score{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
