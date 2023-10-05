@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto',arial,sans-serif;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 253, 142, 1) 100%);
+}
+.container{
+  background: white;
+  padding: 50px;
+  border-radius: 50px;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.search-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 40px;
+}
+.input,
+.button{
+  height: 50px;
+  outline: none;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+}
+.input{
+  width: 400px;
+  background-color: transparent;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(165, 255, 185);
+  cursor: pointer;
+  border-radius: 40px;
+}
+.button:hover{
+  opacity: 0.85;
+}
+.button:active{
+  transform: scale(0.95);
+}
+.task-container{
+  margin-top: 30px;
+  font-size: 23px;
+  line-height: 40px;
+}
+.task{
+  position: relative;
+}
+.fa-square,
+.fa-square-check{
+  margin-right: 7px;
+}
+.fa-circle-xmark{
+  position: absolute;
+  right: 10px;
+  top: 9px;
+}
+.fa-square:hover,
+.fa-square-check:hover,
+.para.active{
+  color: green;
+}
+.para.active .fa-circle-xmark{
+  color: black;
+}
+.para.active .fa-circle-xmark:hover{
+  color: red;
+}
+.fa-circle-xmark:hover{
+  color: red;
+}
+.para.active::after{
+  content: '(completed!)';
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+}
