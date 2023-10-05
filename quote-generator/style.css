@@ -20,7 +20,8 @@ html,body {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 50px 20px;
+  padding: 60px 20px;
+  /* padding-bottom: 200px; */
   text-align: center;
   width: 800px;
 }
@@ -36,7 +37,7 @@ h3{
   max-width: 600px;
 }
 .button{
-  background-color: #9f68e0;
+  background-color: #8317ff;
   color: white;
   border: none;
   border-radius: 10px;
@@ -44,10 +45,61 @@ h3{
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   font-size: 16px;
   cursor: pointer;
+  transition: all ease 0.3s;
 }
 .button:focus{
   outline: 0;
 }
+.button:hover{
+  background-color: #a14fff;
+}
 .button:active{
   transform: scale(0.98);
+}
+.button-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#button{
+  width: 200px;
+}
+.submit-container{
+  display: flex;
+  column-gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.user-input{
+  width: 450px;
+  padding: 0 10px;
+  font-size: 18px;
+  outline: none;
+}
+footer{
+  margin-top: 30px;
+  margin-bottom: -60px;
+  margin-left: -20px;
+  border-bottom-left-radius: 20px;
+  margin-right: -20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+footer a{
+  margin-right: 20px;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+a:hover{
+  color: #8d29ff;
+}
+p {
+  margin-bottom: 10px;
 }
