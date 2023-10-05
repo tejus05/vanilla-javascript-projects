@@ -96,10 +96,21 @@ footer a{
   margin-right: 20px;
   margin-bottom: 25px;
   font-size: 24px;
+  color: #5500b7;
 }
 a:hover{
-  color: #8d29ff;
+  color: #a150ff;
 }
 p {
   margin-bottom: 10px;
+}
+@media (max-width: 400px){
+  footer{
+    font-size:17px;
+  }
+}
+@media (max-width: 350px){
+  footer{
+    font-size:15px;
+  }
 }
