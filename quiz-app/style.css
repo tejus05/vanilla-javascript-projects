@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto',arial,sans-serif;
+  cursor:default;
+  text-align: center;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001e4d;
+}
+.app{
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  /* margin: 100px auto 0; */
+  border-radius: 10px;
+  padding: 30px;
+}
+h1{
+  color: #001e4d;
+  font-size: 35px;
+  font-weight: bold;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+.quiz{
+  padding: 20px 0;
+  display: none;
+}
+h2{
+  font-size: 25px;
+  color: #001e4d;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.button{
+  background: white;
+  color: #222;
+  font-weight: bold;
+  width: 100%;
+  border: solid #222 1px;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  font-style: normal;
+  position: relative;
+}
+/* .button:hover{
+  background-color: #003180;
+  border-color: #003180;
+  color: white;
+} */
+.button.inactive,
+.question.inactive{
+  font-style: italic;
+}
+.button:active,
+.next-button:active{
+  transform: scale(0.98);
+}
+.next-button{
+  background: #001e4d;
+  color: white;
+  font-weight: bold;
+  width: 150px;
+  border: none;
+  padding: 10px;
+  margin: 20px auto 0;
+  cursor: pointer;
+}
+.incorrect{
+  background-color: red;
+  border-color: red;
+  color: white;
+  cursor:not-allowed;
+}
+.correct{
+  background-color: green;
+  border-color: green;
+  color: white;
+  cursor:not-allowed;
+}
+.correct:after{
+  content: '\f058';
+  font-family: "Font Awesome 5 Free";
+  color: black;
+  margin-left: 400px;
+  position: absolute;
+  right: 10px;
+  top: auto;
+  bottom: auto;
+  font-size: 15px;
+}
+.incorrect:after{
+  content: '\f057';
+  font-family: "Font Awesome 5 Free";
+  color: black;
+  position: absolute;
+  right: 10px;
+  top: auto;
+  bottom: auto;
+  font-size: 15px;
+}
