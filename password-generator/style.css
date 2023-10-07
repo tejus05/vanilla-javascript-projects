@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto',arial,sans-serif;
+  cursor: default;
+}
+html,body {
+  background-color: #002339;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.container{
+  margin: 12%;
+  width: 90%;
+  max-width: 700px;
+}
+.display{
+  width: 100%;
+  background: white;
+  color: #333;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 20px;
+  border-radius: 5px;
+}
+.container h1{
+  font-weight: bold;
+  font-size: 45px;
+}
+.container span{
+  color: #019f55;
+  border-bottom: solid 4px #019f55;
+  padding-bottom: 7px;
+}
+.fa-copy{
+  color: #019f55;
+  font-size: 20px;
+  cursor: grab;
+  transition: all ease 0.1s;
+}
+.password{
+  border: none;
+  outline: none;
+  font-size: 24px;
+  cursor: not-allowed;
+}
+.fa-bolt{
+  margin-right: 10px;
+}
+.generate-password{
+  border: 0;
+  outline: 0;
+  background-color: #019f55;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 16px 26px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.generate-password:active{
+  transform: scale(0.95);
+}
+.fa-copy{
+  position: relative;
+}
+.fa-copy:active{
+  transform: scale(0.9);
+}
+.fa-copy.copied::after{
+  content: 'Copied to clipboard!';
+  font-family: 'Roboto',arial,sans-serif;
+  position: absolute;
+  font-size: 15px;
+  top: -40px;
+  right: -60px;
+  white-space: nowrap;
+  color: #002339;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
